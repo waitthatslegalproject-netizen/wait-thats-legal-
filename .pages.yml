@@ -1,0 +1,60 @@
+media:
+  - name: images
+    label: Images
+    input: images
+    output: /images
+
+content:
+  - name: articles
+    label: Articles
+    type: collection
+    path: articles
+    filename: "{primary}.md"
+
+    fields:
+
+      - name: title
+        label: Title
+        type: string
+        required: true
+
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - Rights
+            - Technology
+            - Education
+            - Around the World
+            - Law Tracker
+        required: true
+
+      - name: author
+        label: Author
+        type: string
+        required: true
+
+      - name: date
+        label: Date
+        type: date
+        required: true
+
+      - name: image
+        label: Cover Image
+        type: image
+
+      - name: description
+        label: Short Description
+        type: text
+        required: true
+
+      - name: body
+        label: Article
+        type: rich-text
+        required: true
+
+      - name: sources
+        label: Sources
+        type: string
+        list: true
