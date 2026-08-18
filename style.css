@@ -1,13 +1,3 @@
-/* ================================
-   WAIT, THAT'S LEGAL?
-   MAIN WEBSITE STYLES
-================================ */
-
-
-/* ================================
-   BASIC SETTINGS
-================================ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,84 +6,66 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f7f7f5;
-    color: #111111;
-    line-height: 1.6;
+    background: #f7f6f2;
+    color: #111;
 }
 
-
-/* ================================
-   HEADER
-================================ */
-
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #111111;
-}
-
-
-/* Small top bar */
+/* TOP BAR */
 
 .top-bar {
-    background-color: #111111;
-    color: #ffffff;
+    background: #111;
+    color: white;
     text-align: center;
-    padding: 8px;
-    font-size: 12px;
+    padding: 9px;
+    font-size: 11px;
     letter-spacing: 2px;
 }
 
-
-/* Main logo */
+/* LOGO */
 
 .logo {
     text-align: center;
-    padding: 35px 20px 30px;
+    padding: 45px 20px 35px;
+    background: #f7f6f2;
 }
 
 .logo h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 55px;
-    font-weight: bold;
+    font-family: Georgia, serif;
+    font-size: 64px;
     line-height: 1;
 }
 
 .logo p {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 14px;
-    color: #555555;
-    letter-spacing: 1px;
+    color: #555;
 }
 
-
-/* ================================
-   NAVIGATION
-================================ */
+/* NAVIGATION */
 
 nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    background: white;
 }
 
 nav a {
-    color: #111111;
     text-decoration: none;
-    padding: 15px 20px;
-    font-size: 14px;
+    color: #111;
+    padding: 16px 22px;
+    font-size: 13px;
     font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #111111;
-    color: #ffffff;
+    background: #111;
+    color: white;
 }
 
-
-/* ================================
-   MAIN CONTENT
-================================ */
+/* MAIN */
 
 main {
     max-width: 1200px;
@@ -101,75 +73,69 @@ main {
     padding: 0 30px;
 }
 
-
-/* ================================
-   INTRODUCTION
-================================ */
+/* INTRO */
 
 .intro {
     text-align: center;
     max-width: 750px;
-    margin: 70px auto;
+    margin: 75px auto;
 }
 
 .small-title {
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 11px;
     letter-spacing: 3px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
 .intro h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 45px;
+    font-family: Georgia, serif;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
 .intro p {
-    color: #444444;
     font-size: 17px;
+    color: #555;
     margin-bottom: 12px;
 }
 
-
-/* ================================
-   FEATURED ARTICLE
-================================ */
+/* FEATURED STORY */
 
 .featured {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-top: 1px solid #111111;
-    border-bottom: 1px solid #111111;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
     margin-bottom: 80px;
 }
 
 .featured-text {
-    padding: 60px 50px;
+    padding: 65px 55px;
 }
 
 .category {
     font-size: 11px;
-    font-weight: bold;
     letter-spacing: 2px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
 .featured h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 42px;
+    font-family: Georgia, serif;
+    font-size: 43px;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
 .featured-text p {
-    color: #555555;
+    color: #555;
     margin-bottom: 25px;
 }
 
 .featured button {
-    background-color: #111111;
-    color: #ffffff;
+    background: #111;
+    color: white;
     border: none;
     padding: 14px 20px;
     font-weight: bold;
@@ -177,59 +143,54 @@ main {
 }
 
 .featured button:hover {
-    background-color: #444444;
+    background: #444;
 }
 
-
-/* Featured image placeholder */
+/* FEATURED IMAGE */
 
 .featured-image {
-    background-color: #ddddda;
-    min-height: 400px;
+    min-height: 420px;
+    background: #d9d8d2;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .image-placeholder {
-    border: 3px solid #111111;
+    border: 3px solid #111;
     padding: 40px;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 40px;
+    font-family: Georgia, serif;
+    font-size: 42px;
     font-weight: bold;
 }
 
-
-/* ================================
-   LATEST STORIES
-================================ */
+/* LATEST */
 
 .latest {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 
 .section-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #111111;
+    border-bottom: 2px solid #111;
     padding-bottom: 12px;
     margin-bottom: 30px;
 }
 
 .section-heading h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 35px;
+    font-family: Georgia, serif;
+    font-size: 38px;
 }
 
 .section-heading a {
-    color: #111111;
+    color: #111;
     text-decoration: none;
     font-weight: bold;
 }
 
-
-/* Article grid */
+/* ARTICLE CARDS */
 
 .article-grid {
     display: grid;
@@ -237,147 +198,130 @@ main {
     gap: 30px;
 }
 
-
-/* Individual article */
-
 article {
-    border-bottom: 1px solid #111111;
+    border-bottom: 1px solid #111;
     padding-bottom: 25px;
 }
 
 .article-image {
-    height: 190px;
-    background-color: #ddddda;
+    height: 200px;
+    background: #d9d8d2;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 25px;
+    font-family: Georgia, serif;
+    font-size: 26px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 article h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 24px;
+    font-family: Georgia, serif;
+    font-size: 25px;
     line-height: 1.2;
     margin-bottom: 12px;
 }
 
 article p {
-    color: #555555;
+    color: #555;
     font-size: 15px;
     margin-bottom: 15px;
 }
 
 article a {
-    color: #111111;
+    color: #111;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
 }
 
 article a:hover {
     text-decoration: underline;
 }
 
-
-/* ================================
-   COMPARE SECTION
-================================ */
+/* COMPARE */
 
 .compare {
-    background-color: #111111;
-    color: #ffffff;
+    background: #111;
+    color: white;
     text-align: center;
-    padding: 80px 30px;
-    margin-bottom: 80px;
+    padding: 90px 30px;
+    margin-bottom: 90px;
 }
 
 .compare .category {
-    color: #ffffff;
+    color: white;
 }
 
 .compare h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 45px;
+    font-family: Georgia, serif;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
 .compare p {
     max-width: 650px;
-    margin: 0 auto 25px;
-    color: #dddddd;
+    margin: auto;
+    color: #ddd;
+    margin-bottom: 30px;
 }
 
 .compare button {
-    background-color: #ffffff;
-    color: #111111;
+    background: white;
+    color: #111;
     border: none;
-    padding: 14px 22px;
+    padding: 15px 25px;
     font-weight: bold;
-    cursor: pointer;
 }
 
-.compare button:hover {
-    background-color: #dddddd;
-}
-
-
-/* ================================
-   LAW TRACKER
-================================ */
+/* LAW TRACKER */
 
 .tracker {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
-    border-top: 1px solid #111111;
+    border-top: 2px solid #111;
     padding-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 
 .tracker h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 40px;
+    font-family: Georgia, serif;
+    font-size: 42px;
     margin-bottom: 15px;
 }
 
 .tracker p {
-    color: #555555;
+    color: #555;
 }
 
 .tracker-box {
-    border: 1px solid #111111;
+    background: white;
+    border: 1px solid #111;
     padding: 30px;
-    background-color: #ffffff;
 }
 
 .tracker-box h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 30px;
+    font-family: Georgia, serif;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
-
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 footer {
-    background-color: #111111;
-    color: #ffffff;
+    background: #111;
+    color: white;
     text-align: center;
-    padding: 60px 30px;
+    padding: 65px 30px;
 }
 
 footer h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 35px;
+    font-family: Georgia, serif;
+    font-size: 38px;
 }
 
 footer p {
-    color: #cccccc;
+    color: #ccc;
     margin-top: 10px;
 }
 
@@ -386,7 +330,7 @@ footer p {
 }
 
 .footer-links a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     margin: 0 12px;
     font-size: 14px;
@@ -400,32 +344,16 @@ footer p {
     font-size: 12px;
 }
 
-
-/* ================================
-   PHONE / TABLET
-================================ */
+/* PHONE */
 
 @media (max-width: 800px) {
 
     .logo h1 {
-        font-size: 40px;
-    }
-
-    nav a {
-        padding: 10px;
-        font-size: 12px;
+        font-size: 43px;
     }
 
     .featured {
         grid-template-columns: 1fr;
-    }
-
-    .featured-text {
-        padding: 40px 25px;
-    }
-
-    .featured h2 {
-        font-size: 35px;
     }
 
     .article-grid {
@@ -436,12 +364,13 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .featured-text {
+        padding: 45px 30px;
+    }
+
 }
 
-
-/* ================================
-   SMALL PHONES
-================================ */
+/* SMALL PHONE */
 
 @media (max-width: 500px) {
 
@@ -450,23 +379,24 @@ footer p {
     }
 
     .logo h1 {
-        font-size: 32px;
+        font-size: 34px;
     }
 
-    .intro {
-        margin: 50px auto;
+    nav a {
+        padding: 10px;
+        font-size: 11px;
     }
 
     .intro h2 {
-        font-size: 35px;
+        font-size: 36px;
     }
 
-    .featured-image {
-        min-height: 250px;
+    .featured h2 {
+        font-size: 34px;
     }
 
     .compare h2 {
-        font-size: 35px;
+        font-size: 36px;
     }
 
 }
