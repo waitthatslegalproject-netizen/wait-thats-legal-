@@ -1,0 +1,472 @@
+/* ================================
+   WAIT, THAT'S LEGAL?
+   MAIN WEBSITE STYLES
+================================ */
+
+
+/* ================================
+   BASIC SETTINGS
+================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f5;
+    color: #111111;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #111111;
+}
+
+
+/* Small top bar */
+
+.top-bar {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+/* Main logo */
+
+.logo {
+    text-align: center;
+    padding: 35px 20px 30px;
+}
+
+.logo h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555555;
+    letter-spacing: 1px;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #dddddd;
+}
+
+nav a {
+    color: #111111;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+
+/* ================================
+   MAIN CONTENT
+================================ */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+
+/* ================================
+   INTRODUCTION
+================================ */
+
+.intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 70px auto;
+}
+
+.small-title {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.intro h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #444444;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+
+/* ================================
+   FEATURED ARTICLE
+================================ */
+
+.featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #111111;
+    margin-bottom: 80px;
+}
+
+.featured-text {
+    padding: 60px 50px;
+}
+
+.category {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.featured h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.featured-text p {
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.featured button {
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.featured button:hover {
+    background-color: #444444;
+}
+
+
+/* Featured image placeholder */
+
+.featured-image {
+    background-color: #ddddda;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder {
+    border: 3px solid #111111;
+    padding: 40px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* ================================
+   LATEST STORIES
+================================ */
+
+.latest {
+    margin-bottom: 80px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 35px;
+}
+
+.section-heading a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Article grid */
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* Individual article */
+
+article {
+    border-bottom: 1px solid #111111;
+    padding-bottom: 25px;
+}
+
+.article-image {
+    height: 190px;
+    background-color: #ddddda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+article p {
+    color: #555555;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+article a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   COMPARE SECTION
+================================ */
+
+.compare {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 30px;
+    margin-bottom: 80px;
+}
+
+.compare .category {
+    color: #ffffff;
+}
+
+.compare h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.compare p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #dddddd;
+}
+
+.compare button {
+    background-color: #ffffff;
+    color: #111111;
+    border: none;
+    padding: 14px 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.compare button:hover {
+    background-color: #dddddd;
+}
+
+
+/* ================================
+   LAW TRACKER
+================================ */
+
+.tracker {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    border-top: 1px solid #111111;
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+
+.tracker h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.tracker p {
+    color: #555555;
+}
+
+.tracker-box {
+    border: 1px solid #111111;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.tracker-box h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+footer h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 35px;
+}
+
+footer p {
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+.footer-links {
+    margin: 30px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+
+/* ================================
+   PHONE / TABLET
+================================ */
+
+@media (max-width: 800px) {
+
+    .logo h1 {
+        font-size: 40px;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .featured {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-text {
+        padding: 40px 25px;
+    }
+
+    .featured h2 {
+        font-size: 35px;
+    }
+
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tracker {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ================================
+   SMALL PHONES
+================================ */
+
+@media (max-width: 500px) {
+
+    main {
+        padding: 0 15px;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .intro {
+        margin: 50px auto;
+    }
+
+    .intro h2 {
+        font-size: 35px;
+    }
+
+    .featured-image {
+        min-height: 250px;
+    }
+
+    .compare h2 {
+        font-size: 35px;
+    }
+
+}
