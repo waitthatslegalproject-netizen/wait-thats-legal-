@@ -1,0 +1,118 @@
+---
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const articles = await getCollection("articles");
+
+  return articles.map((article) => ({
+    params: {
+      slug: article.id.replace(/\.md$/, "")
+    },
+    props: {
+      article
+    }
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{article.data.title} | Wait, That's Legal?</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-bar">
+            <p>LAW • TEENS • THE WORLD AROUND US</p>
+        </div>
+
+        <div class="logo">
+            <h1>Wait, That's Legal?</h1>
+            <p>Making the law make sense.</p>
+        </div>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="#">Latest</a>
+            <a href="#">Technology</a>
+            <a href="#">Rights</a>
+            <a href="#">Education</a>
+            <a href="#">Around the World</a>
+            <a href="#">Compare</a>
+            <a href="#">Law Tracker</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <article class="single-article">
+
+            <p class="category">
+                {article.data.category}
+            </p>
+
+            <h1>
+                {article.data.title}
+            </h1>
+
+            <p class="article-info">
+                By {article.data.author} · {article.data.date}
+            </p>
+
+            {article.data.image && (
+                <img
+                    class="single-article-image"
+                    src={article.data.image}
+                    alt={article.data.title}
+                />
+            )}
+
+            <p class="article-description">
+                {article.data.description}
+            </p>
+
+            <div class="article-body">
+                <Content />
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+
+        <h2>Wait, That's Legal?</h2>
+
+        <p>
+            Laws. Teens. The world around us.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Sources</a>
+            <a href="#">Privacy</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Wait, That's Legal?
+        </p>
+
+    </footer>
+
+</body>
+</html>
