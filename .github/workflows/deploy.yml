@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Install packages
         run: npm install
 
@@ -36,7 +39,7 @@ jobs:
         run: npm run build
 
       - name: Upload website
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
